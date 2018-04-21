@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<!-- The <!DOCTYPE> declaration is not an HTML tag; it is an instruction to the web browser about what version of HTML the page is written in. In HTML 4.01, the <!DOCTYPE> declaration refers to a DTD, because HTML 4.01 was based on SGML. ... HTML5 is not based on SGML, and therefore does not require a reference to a DTD.-->
+
+<html lang="en">
+<!-- it allows the browser know what language is used in a web page  -->
+
+<head>
+  <meta charset="utf-8">
+  <!--  UTF-8 (U from Universal Character Set + Transformation Format—8-bit) is a character encoding capable of encoding all possible characters (called code points) in Unicode. The encoding is variable-length and uses 8-bit code units. -->
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <!-- this method tag will direct internet explorer to display it in IE edge mode -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- This means that the browser will (probably) render the width of the page at the width of its own screen. So if that screen is 320px wide, the browser window will be 320px wide, rather than way zoomed out and showing 960px (or whatever that device does by default, in lieu of a responsive meta tag) -->
+  <!-- Title -->
+  <title>Modern Reponsive Website</title>
+  <!-- Defines a title on the webpage -->
+  <!-- Favicon -->
+  <link rel="shortcut icon" href="img/img/favicon.ico">
+  <!-- favicon -->
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300,300i,400,400i,700,700i" rel="stylesheet">
+  <!-- Font-Awesome -->
+  <link rel="stylesheet" href="css/font-awesome/css/fontawesome-all.min.css">
+  <!-- Devicon -->
+  <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
+  <!--Bootstrap CSS -->
+  <link rel="stylesheet" href="css/bootstrap/bootstrap.min.css">
+  <!--Animate CSS-->
+  <link rel="stylesheet" href="css/animate/animate.css">
+  <!-- AOS CSS  -->
+  <link rel="stylesheet" href="css/aos/aos.css" />
+  <!-- Style CSS -->
+  <link rel="stylesheet" href="css/loader.css">
+  <link rel="stylesheet" href="css/style.css">
+
+  <!-- Just a quick note, we must add the google font BEFORE adding CSS link. This is because we want to use the FONTS inside the CSS  -->
+</head>
+
+<body>
+
+  <div id="loader">
+    <div id="box"></div>
+    <div id="hill"></div>
+  </div>
+
+  <!-- Home -->
+  <section id="home">
+    <!-- unique id = home, used to point to a style in CSS -->
+
+    <div id="home-cover" class="bg-parallax animated fadeIn">
+
+      <div id="home-content-box">
+
+        <div id="home-content-box-inner" class "text-center">
+
+          <div id="home-heading" class="animated bounce">
+            <h3>Hi, I'm Arthur</h3>
+          </div>
+
+
+          <div data-aos="fade-down">
+
+            <div id="home-full-stack">
+              <div class="div1" <span class="summary quotes" style="display:none;">
+                <h3>A front-end web developer</h3></span>
+              </div>
+              <div class="div2" <span class="summary quotes" style="display: none;">
+                <h3>A front-end web developer</h3></span>
+              </div>
+              <div class="div3" <span class="summary quotes" style="display: none;">
+                <h3>A front-end web developer</h3></span>
+              </div>
+
+
+            </div>
+
+          </div>
+
+
+
+          <div id="home-btn" class="animated jackInTheBox">
+            <a class="btn btn-primary btn-lg btn-general btn-white" href="#work" role="button" title="View Our Work">Contact Me</a>
+
+            <a class="btn btn-secondary btn-lg btn-general btn-white" href="#work" role="button" title="View Our Work">Read More</a>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+
+
+  </section>
+
+
+  <!-- Service -->
+  <section id="services">
+
+    <!-- Only make a unique ID for UNIQUE or SINGLE elements   -->
+    <div class="content-box">
+      <div data-aos="fade-down">
+        <h3>Experience</h3>
+        <div class="content-title-underline">
+        </div>
+      </div>
+
+
+      <div class="container">
+        <div data-aos="fade-up">
+          <div class="row">
+            <div class="col-md-4">
+              <div class="service-item">
+                <div class="service-item-icon">
+                  <i class="devicon-html5-plain-wordmark colored"></i>
+                </div>
+                <div class="service-item-title">
+                  <h3>HTML5</h3>
+                </div>
+                <div class="service-item-description">
+                  <p>Lorem Ipsum is simply dummy text of the printing and</p>
+
+                </div>
+
+              </div>
+            </div>
+
+
+            <div class="col-md-4">
+
+
+              <div class="service-item">
+                <div class="service-item-icon">
+                  <i class="devicon-css3-plain-wordmark colored"></i>
+                </div>
+                <div class="service-item-title">
+                  <h3>CSS3</h3>
+                </div>
+                <div class="service-item-description">
+                  <p>Lorem Ipsum is simply dummy text of the printing</p>
+
+                </div>
+
+              </div>
+
+
+
+            </div>
+            <div class="col-md-4">
+
+              <div class="service-item">
+                <div class="service-item-icon">
+                  <i class="devicon-bootstrap-plain-wordmark colored"></i>
+                </div>
+                <div class="service-item-title">
+                  <h3>Bootstrap</h3>
+                </div>
+                <div class="service-item-description">
+                  <p>It was popularised in the 1960s with the release of Letraset</p>
+
+                </div>
+
+              </div>
+
+            </div>
+
+
+            <div class="col-md-4">
+
+              <div class="service-item">
+                <div class="service-item-icon">
+                  <i class="devicon-javascript-plain colored"></i>
+                </div>
+                <div class="service-item-title">
+                  <h3>JavaScript</h3>
+                </div>
+                <div class="service-item-description">
+                  <p>In imperdiet non dolor sed vulputate. Pellentesque.</p>
+
+                </div>
+
+              </div>
+
+
+
+
+            </div>
+            <div class="col-md-4">
+
+
+              <div class="service-item">
+                <div class="service-item-icon">
+                  <i class="devicon-ruby-plain-wordmark colored"></i>
+                </div>
+                <div class="service-item-title">
+                  <h3>Ruby</h3>
+                </div>
+                <div class="service-item-description">
+                  <p>In imperdiet non dolor sed vulputate. Pellentesque eget.</p>
+
+                </div>
+
+              </div>
+
+            </div>
+            <div class="col-md-4">
+
+              <div class="service-item">
+                <div class="service-item-icon">
+                  <i class="devicon-rails-plain-wordmark colored"></i>
+                </div>
+                <div class="service-item-title">
+                  <h3>Rails</h3>
+                </div>
+                <div class="service-item-description">
+                  <p>Nullam ultrices arcu non nisi mollis, dignissim.</p>
+
+                </div>
+
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+
+
+      </div>
+
+  </section>
+
+
+  <!-- About -->
+
+  <section id="about">
+
+    <!-- About Arthur Truong with picture -->
+
+    <div id="about-at-diagonal" class="bg-parallax">
+
+    </div>
+
+    <!-- About me on the left side-->
+
+    <div class="container">
+
+      <div class="row">
+
+        <div class="col-md-4">
+
+          <div id="about-content-box">
+
+            <div id="about-content-box-outer">
+
+              <div id="about-content-box-inner">
+
+                <div class="content-box">
+                  <div data-aos="fade-down">
+                    <h3>About me</h3>
+                    <div class="content-title-underline">
+                    </div>
+                  </div>
+
+                  <div id="about-me-description">
+                    <div data-aos="fade-up">
+
+                      <p>After working across different industries and being in the last year of my accounting degree. I found my passion in web/software development as well as cyber security and decided to pursue a career in the technology space.
+                        <br> I love programming and how it's used in today's society. I love to explore large scale problems and believe my abilities is best achieved by working as a part of a team who share the same goals and visions.</p>
+                      <div id="about-button">
+                        <div data-aos="fade-up">
+
+                          <button type="button" class="btn btn-primary">My Projects</button>
+                        </div>
+                      </div>
+                    </div>
+
+                  </div>
+
+                </div>
+
+              </div>
+
+            </div>
+
+          </div>
+
+
+        </div>
+
+
+  </section>
+
+  <!-- Projects  -->
+  <section id="Projects">
+
+    <div class="content-box">
+      <div data-aos="fade-down">
+        <h3>Projects</h3>
+        <div class="content-title-underline">
+        </div>
+      </div>
+
+
+      <div class="container-fluid">
+
+        <div data-aos="fade-up">
+          <div class="row">
+
+            <div class="col-md-3">
+              <div class="img-wrapper">
+                <a href="img/work/1.jpg" title="github-terminal">
+                <img src="img/work/1.jpg" class="img-fluid" alt="Responsive image">
+              </a>
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div class="img-wrapper">
+                <a href="img/work/2.jpg" title="github-terminal">
+                <img src="img/work/2.jpg" class="img-fluid" alt="Responsive image">
+              </a>
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div class="img-wrapper">
+                <a href="img/work/3.jpg" title="github-terminal">
+                <img src="img/work/3.jpg" class="img-fluid" alt="Responsive image">
+              </a>
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div class="img-wrapper">
+                <a href="img/work/4.jpg" title="github-terminal">
+                <img src="img/work/4.jpg" class="img-fluid" alt="Responsive image">
+              </a>
+              </div>
+            </div>
+
+
+            <div class="col-md-3">
+              <div class="img-wrapper">
+                <a href="img/work/5.jpg" title="github-terminal">
+                <img src="img/work/5.jpg" class="img-fluid" alt="Responsive image">
+              </a>
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div class="img-wrapper">
+                <a href="img/work/6.jpg" title="github-terminal">
+                <img src="img/work/6.jpg" class="img-fluid" alt="Responsive image">
+              </a>
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div class="img-wrapper">
+                <a href="img/work/7.jpg" title="github-terminal">
+                <img src="img/work/7.jpg" class="img-fluid" alt="Responsive image">
+              </a>
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div class="img-wrapper">
+                <a href="img/work/8.jpg" title="github-terminal">
+                <img src="img/work/8.jpg" class="img-fluid" alt="Responsive image">
+              </a>
+              </div>
+            </div>
+
+
+          </div>
+
+        </div>
+
+
+      </div>
+  </section>
+
+
+
+  <!-- Temporary Space -->
+  <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+
+
+
+  <!-- JQUERY -->
+  <script src="js/jquery.js"></script>
+  <!--We need to add bootstrap AFTER jquery because bootstrap requires JQURY library-->
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.5.2/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.2/modernizr.js"></script>
+
+  <!--Bootstrap javascript-->
+  <script src="js/bootstrap/bootstrap.min.js"></script>
+
+  <!-- animation JS -->
+  <script src="js/animation.js"></script>
+
+  <!-- AOS JS -->
+  <script src="js/aos/aos.js"></script>
+
+  <!-- Custom JS  -->
+  <script src="js/custom.js"></script>
+
+  <script src="js/loading.js"></script>
+
+
+
+</body>
+
+
+</html>

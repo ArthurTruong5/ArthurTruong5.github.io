@@ -1,0 +1,298 @@
+/* ==========================================================================
+
+                    DEFAULT VALUES:
+                    Font Family: Roboto Condensed
+
+
+                    Greenish Blue :#C3c6b3 (Button, Icons, Link, Lines & Background)
+                    Steel Gray : #41464b (Headings)
+                    Blue Bayoux : #64707b (Paragraphs)
+                    White : #fff (Text with Black Backgrounds)
+                    Black : #000
+/* ========================================================================== */
+
+/* We can provide alternative options if the browser cannot identify the font. All we need to do is add " , " to ensure that there is another option */
+
+
+
+html, body {
+  height: 100%;
+}
+
+body {
+  font-family: "Roboto Condensed", sans-serif;
+}
+
+p {
+
+  color: #64707b;
+  font-size: 16px;
+  font-weight: 300;
+
+}
+
+h3 {
+  text-transform: capitalize;
+  color: #41464b;
+
+}
+
+/* ==========================================================================
+
+                               HOME
+
+/* ========================================================================== */
+
+#home {
+  height: 100%;
+}
+
+#home-cover {
+  /* .. means go one step back and find IMG folder */
+  height: 100%;
+  background-image: url("../img/coding-home.jpg");
+  /* So Background Image doesn't Loop */
+  background-repeat: no-repeat;
+  /* Will scale the background image as large as possible */
+  background-size: cover;
+  /* The image will be centered within the whole screen  */
+  background-position: center;
+  /* This is a parallax effect */
+  background-attachment: fixed;
+}
+
+#home-content-box {
+  /* It will make a home-content box as wide as its parent div */
+  width: 100%;
+  /* This div will cover the entire browser window  */
+  height: 100%;
+  /* Behave like a table */
+  display: table;
+}
+
+#home-content-box-inner {
+  /* It will act as a table data for home-content-box */
+  display: table-cell;
+  /* Alignment for an element */
+  vertical-align: middle;
+  text-align: center;
+}
+
+#home-heading h3 {
+  color: #fff;
+  font-size: 55px;
+  font-weight: 700;
+  /* Create space between the words  */
+  margin: 20px 0 20px 0px;
+  text-transform: uppercase;
+}
+
+#home-full-stack h3 {
+  color: #fff;
+}
+
+.front-page .summary {
+
+  font-size: 35px;
+  font-weight: 200;
+
+}
+
+/* ==========================================================================
+
+                               PARALLAX (Generic)
+
+/* ========================================================================== */
+
+.bg-parallax {
+  background-repeat: no-repeat;
+  /* Will scale the background image as large as possible */
+  background-size: cover;
+  /* The image will be centered within the whole screen  */
+  background-position: center;
+  /* This is a parallax effect */
+  background-attachment: fixed;
+}
+
+/* ==========================================================================
+
+                    BUTTONS (Generic) - All Buttons
+
+/* ========================================================================== */
+
+.btn-general {
+  border-width: 2px;
+  border-radius: 0;
+  padding: 12px 26px 12px 26px;
+  font-size: 16px;
+  font-weight: 400;
+  text-transform: capitalize;
+}
+
+.btn-white {
+  color: #fff;
+}
+
+/* focus sudo class is applied when an element has received focus */
+
+.btn-white:hover, btn-white:focus {
+  background-color: #fff;
+  color: #41464b;
+}
+
+.btn-primary:hover {
+  background-color: #FFD700
+
+}
+
+
+/* ==========================================================================
+
+                               Animation
+
+/* ========================================================================== */
+
+#home-cover, #home-heading, #home-btn {
+  animation-duration: .5s;
+}
+
+#home-cover {
+  animation-delay: .1s;
+}
+
+#home-heading {
+  animation-delay: .1s;
+}
+
+#home-btn {
+  animation-delay: .5s;
+}
+
+.content-box {
+  padding: 60px 0px 60px 0px;
+}
+
+.content-title h3 {
+  font-size: 30px;
+  font-weight: 700;
+  text-align: center;
+  margin: 0 0 30px 0;
+}
+
+.content-title-underline {
+  width: 30px;
+  height: 3px;
+  background-color: #34c6d3;
+  margin: 0 auto 30px auto;
+}
+
+/* ==========================================================================
+
+                               SERVICES
+
+/* ========================================================================== */
+
+.service-item {
+  /* top 20px, right space 0, bottom space 20px, left space 0px */
+  padding: 20px 0 20px 0;
+  /* Margin space */
+  margin-bottom: 20px;
+  /* User will see a pointer when they hover */
+  cursor: pointer;
+}
+
+.service-item-icon {
+  color: #34c6d3;
+  font-size: 55px;
+  /* Icons will be changed and floated to the LEFT side */
+  float: left;
+  padding: 15px;
+  /* space between icon and text */
+  margin-right: 25px;
+  height: 75px;
+  width: 75px;
+  text-align: center;
+}
+
+.service-item:hover .service-item-icon i {
+  color: #fff;
+  background-color: #34c6d3;
+}
+
+.service-item-title h3 {
+  font-size: 20px;
+  font-weight: 400;
+  margin: 0 0 10px 0;
+}
+
+.service-item-description p {
+
+  margin: 0;
+  padding-left: 85px;
+
+
+}
+
+/* ==========================================================================
+
+                        About Section
+
+/* ========================================================================== */
+
+
+#about-at-diagonal {
+    width: 26%;
+    height: 118px;
+    float: right;
+    background-image: url(../img/org.jpg);
+    border-left: 392px solid #fff;
+    border-top: 664px solid transparent;
+    background-color: #3b97f9;
+    background-size: auto;
+    background-position: right;
+}
+
+
+#about-content-box {
+  float: left;
+  height: 700px;
+}
+
+#about-content-box-outer {
+  width: 800px;
+  height: 600px;
+  display: table;
+}
+
+#about-content-box-inner {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+#about .content-box h3 {
+  text-align: middle;
+  margin-bottom: 20px;
+}
+
+#about .content-title-underline {
+  margin: 0px 0px 30px 380px;
+}
+
+
+#about-me-description {
+  margin-bottom: 30px;
+}
+
+
+.content-box h3 {
+
+  text-align: center;
+
+}
+
+
+/* ==========================================================================
+
+                        Projects
+
+/* ========================================================================== */

@@ -12,10 +12,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <!-- This means that the browser will (probably) render the width of the page at the width of its own screen. So if that screen is 320px wide, the browser window will be 320px wide, rather than way zoomed out and showing 960px (or whatever that device does by default, in lieu of a responsive meta tag) -->
   <!-- Title -->
-  <title>Modern Reponsive Website</title>
+  <title>Portfolio Page</title>
   <!-- Defines a title on the webpage -->
   <!-- Favicon -->
-  <link rel="shortcut icon" href="img/img/favicon.ico">
+  <link rel="shortcut icon" href="img/logo-5.png">
   <!-- favicon -->
   <!-- Google Font -->
   <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300,300i,400,400i,700,700i" rel="stylesheet">
@@ -24,24 +24,71 @@
   <!-- Devicon -->
   <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
   <!--Bootstrap CSS -->
-  <link rel="stylesheet" href="css/bootstrap/bootstrap.min.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
   <!--Animate CSS-->
   <link rel="stylesheet" href="css/animate/animate.css">
   <!-- AOS CSS  -->
   <link rel="stylesheet" href="css/aos/aos.css" />
   <!-- Style CSS -->
   <link rel="stylesheet" href="css/loader.css">
+  <link rel="stylesheet" href="css/animate.css">
   <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/mag-popup/magnific-popup.css">
+
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
 
   <!-- Just a quick note, we must add the google font BEFORE adding CSS link. This is because we want to use the FONTS inside the CSS  -->
 </head>
+<!-- offset is to delay -->
+<!-- https://www.w3schools.com/bootstrap/bootstrap_scrollspy.asp  -->
 
-<body>
+<body data-spy="scroll" data-target=".navbar-expand-md" data-offset="95">
 
   <div id="loader">
     <div id="box"></div>
     <div id="hill"></div>
   </div>
+
+  <!-- Header is used for introduction content or a set of navigation links  -->
+  <header>
+    <nav class="navbar navbar-expand-md navbar-dark fixed-top">
+      <a class="navbar-brand" href="#"><img src="img/logo-5.png" alt="Arthurs Portfolio"></a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+      <div class="collapse navbar-collapse" id="navbarCollapse">
+        <ul class="navbar-nav mr-auto">
+
+          <li class="nav-item">
+            <a class="nav-link smooth-scroll" href="#home">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link smooth-scroll" href="#whole-experience">Experience</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link smooth-scroll" href="#services">Technology Stack</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link smooth-scroll" href="#about">About Me</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link smooth-scroll" href="#Projects">Personal Projects</a>
+          </li>
+          <li class="nav-item" >
+            <a class="nav-link smooth-scroll" href="#contact">Contact Me</a>
+          </li>
+
+        </ul>
+        <form class="form-inline mt-2 mt-md-0">
+          <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+        </form>
+      </div>
+    </nav>
+  </header>
+
+
 
   <!-- Home -->
   <section id="home">
@@ -53,75 +100,199 @@
 
         <div id="home-content-box-inner" class "text-center">
 
-          <div id="home-heading" class="animated bounce">
-            <h3>Hi, I'm Arthur</h3>
+          <div id="box1">
+            Hi, I'm Arthur. I'm a - -
+
+            <ul id="swap">
+              <li>Front-End Developer</li>
+              <li>Back-End Developer</li>
+              <li>Full-Stack Developer</li>
+            </ul>
+            .
           </div>
 
-
-          <div data-aos="fade-down">
-
-            <div id="home-full-stack">
-              <div class="div1" <span class="summary quotes" style="display:none;">
-                <h3>A front-end web developer</h3></span>
-              </div>
-              <div class="div2" <span class="summary quotes" style="display: none;">
-                <h3>A front-end web developer</h3></span>
-              </div>
-              <div class="div3" <span class="summary quotes" style="display: none;">
-                <h3>A front-end web developer</h3></span>
-              </div>
-
-
-            </div>
-
-          </div>
-
-
-
-          <div id="home-btn" class="animated jackInTheBox">
+          <div id="home-btn" data-aos="fade" data-aos-delay="200">
             <a class="btn btn-primary btn-lg btn-general btn-white" href="#work" role="button" title="View Our Work">Contact Me</a>
 
             <a class="btn btn-secondary btn-lg btn-general btn-white" href="#work" role="button" title="View Our Work">Read More</a>
 
           </div>
 
+          <ul class="home-social">
+            <li>
+              <a href="https://www.linkedin.com/in/arthur-truong-a4b8a64b/"><i class="fab fa-linkedin-in" aria-hidden="true"></i><span>Linkedin</span></a>
+            </li>
+            <li>
+              <a href="https://twitter.com/ArthurTDev" target="_blank"><i class="fab fa-twitter" aria-hidden="true"></i><span>Twitter</span></a>
+            </li>
+            <li>
+              <a href="https://github.com/ArthurTruong5" target="_blank"><i class="fab fa-github" aria-hidden="true"></i><span>Github</span></a>
+            </li>
+
+          </ul>
+
+
         </div>
 
       </div>
+
 
     </div>
 
 
 
+
+
   </section>
 
+  <section id="whole-experience">
 
+
+
+
+    <div class="row">
+
+      <div class="col-md-4">
+        <div class="box" data-aos="fade" data-aos-delay="400">
+          <i class="fas fa-graduation-cap fa-3x"></i>
+          <h3>Education</h3>
+          <div class="content-title-underline">
+          </div>
+
+          <div class="info-about-me">
+            <div class="content-title-underline">
+            </div>
+
+            <p>2018 - Currently Enrolled</p>
+            <h5>Coder Academy</h5>
+            <p>Diploma in Information Technology</p>
+            <div class="content-title-underline">
+
+            </div>
+
+            <p>2016 - Currently Enrolled</p>
+            <h5>Macquarie University - Part Time</h5>
+            <p>Bachelor of Commerce - Professional Accounting</p>
+            <div class="content-title-underline">
+            </div>
+
+
+            <br>
+
+            <p>2015 - 2016</p>
+            <h5>Sydney Business Institute of Technology</h5>
+            <p>Advance Diploma of Commerce - Major in Accounting</p>
+            <div class="content-title-underline">
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+      <div class="col-md-4">
+        <div class="box" data-aos="fade" data-aos-delay="800">
+          <i class="fas fa-wrench fa-3x"></i>
+          <h3>Skills</h3>
+          <div class="content-title-underline">
+          </div>
+          <div class="skills-icon">
+
+            <i class="devicon-html5-plain-wordmark"></i>
+            <i class="devicon-css3-plain-wordmark"></i>
+            <i class="devicon-bootstrap-plain-wordmark"></i><br>
+            <i class="devicon-sass-original"></i>
+            <i class="devicon-ruby-plain-wordmark"></i>
+            <i class="devicon-rails-plain-wordmark"></i><br>
+            <i class="devicon-javascript-plain"></i>
+            <i class="devicon-react-original-wordmark"></i>
+            <i class="devicon-nodejs-plain-wordmark"></i>
+          </div>
+
+          <div class="box" data-aos="fade" data-aos-delay="800">
+            <div class="digital-seo">
+              <i class="fas fa-users"></i>
+            </div>
+            <h3>Digital Marketing and SEO</h3>
+            <div class="content-title-underline"></div>
+            <p>I used to run a successful dropshipping business and have experience in SEO. I'm competent in Google Analytics, Facebook Ads and able to increase web rankings. I identify keywords to increase SEO, create backlinks, and have experience in tesitng
+              products, scaling and creating successfull LLA's through Facebook (LookALike).</p>
+
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="box" data-aos="fade" data-aos-delay="1200">
+          <i class="fas fa-briefcase fa-3x"></i>
+          <h3>Work History</h3>
+          <div class="content-title-underline">
+          </div>
+          <div class="info-about-me">
+            <div class="content-title-underline">
+            </div>
+
+            <p>2018</p>
+            <h5>Law In Order</h5>
+            <p>Legal Process Outsourcing Officer</p>
+            <div class="content-title-underline">
+
+            </div>
+
+            <p>2017</p>
+            <h5>Australian Taxation Office</h5>
+            <p>Inbound Australian Tax Office Customer Service Representative</p>
+            <div class="content-title-underline">
+            </div>
+
+
+
+            <br>
+
+            <p>2017</p>
+            <h5>ResMed</h5>
+            <p>Material Handler</p>
+            <div class="content-title-underline">
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+
+
+  </section>
+
+  <br><br><br>
   <!-- Service -->
   <section id="services">
 
     <!-- Only make a unique ID for UNIQUE or SINGLE elements   -->
     <div class="content-box">
-      <div data-aos="fade-down">
-        <h3>Experience</h3>
+      <div data-aos="fade-down" data-aos-delay="200">
+        <div class="content-title">
+          <h3>My Expertise</h3>
+        </div>
+        <div class="service-paragraph">
+          <p>I've got experience in all the latest technology stacks</p>
+        </div>
         <div class="content-title-underline">
         </div>
       </div>
 
-
       <div class="container">
-        <div data-aos="fade-up">
+        <div data-aos="fade-up" data-aos-delay="400">
           <div class="row">
             <div class="col-md-4">
-              <div class="service-item">
-                <div class="service-item-icon">
-                  <i class="devicon-html5-plain-wordmark colored"></i>
-                </div>
+              <div class="service-item" data-aos="fade" data-aos-delay="700">
                 <div class="service-item-title">
                   <h3>HTML5</h3>
                 </div>
+                <div class="service-item-icon">
+                  <i class="devicon-html5-plain-wordmark colored"></i>
+                </div>
                 <div class="service-item-description">
-                  <p>Lorem Ipsum is simply dummy text of the printing and</p>
-
+                  <p>HTML5 is the latest version of Hypertext Markup Language, the code that describes web pages.</p>
                 </div>
 
               </div>
@@ -131,18 +302,17 @@
             <div class="col-md-4">
 
 
-              <div class="service-item">
-                <div class="service-item-icon">
-                  <i class="devicon-css3-plain-wordmark colored"></i>
-                </div>
+              <div class="service-item" data-aos="fade" data-aos-delay="800">
                 <div class="service-item-title">
                   <h3>CSS3</h3>
                 </div>
-                <div class="service-item-description">
-                  <p>Lorem Ipsum is simply dummy text of the printing</p>
-
+                <div class="service-item-icon">
+                  <i class="devicon-css3-plain-wordmark colored"></i>
                 </div>
-
+                <div class="service-item-description">
+                  <p>CSS3 is the latest evolution of the Cascading Style Sheets language and aims at extending CSS2.1. It brings a lot of long-awaited novelties, like rounded corners, shadows, gradients, transitions or animations, as well as new layouts
+                    like multi-columns, flexible box or grid layouts.</p>
+                </div>
               </div>
 
 
@@ -150,16 +320,16 @@
             </div>
             <div class="col-md-4">
 
-              <div class="service-item">
-                <div class="service-item-icon">
-                  <i class="devicon-bootstrap-plain-wordmark colored"></i>
-                </div>
+              <div class="service-item" data-aos="fade" data-aos-delay="900">
                 <div class="service-item-title">
                   <h3>Bootstrap</h3>
                 </div>
+                <div class="service-item-icon">
+                  <i class="devicon-bootstrap-plain-wordmark colored"></i>
+                </div>
                 <div class="service-item-description">
-                  <p>It was popularised in the 1960s with the release of Letraset</p>
-
+                  <p>Bootstrap is a free front-end framework for faster and easier web development. Bootstrap includes HTML and CSS based design templates for typography, forms, buttons, tables, navigation, modals, image carousels and many other, as well
+                    as optional JavaScript plugins.</p>
                 </div>
 
               </div>
@@ -169,36 +339,35 @@
 
             <div class="col-md-4">
 
-              <div class="service-item">
-                <div class="service-item-icon">
-                  <i class="devicon-javascript-plain colored"></i>
-                </div>
+              <div class="service-item" data-aos="fade" data-aos-delay="1000">
                 <div class="service-item-title">
                   <h3>JavaScript</h3>
                 </div>
+                <div class="service-item-icon">
+                  <i class="devicon-javascript-plain colored"></i>
+                </div>
                 <div class="service-item-description">
-                  <p>In imperdiet non dolor sed vulputate. Pellentesque.</p>
+                  <p>JavaScript is a cross-platform, object-oriented scripting language used to make webpages interactive (e.x. ... Client-side JavaScript extends the core language by supplying objects to control a browser and its Document Object Model (DOM).</p>
 
                 </div>
 
               </div>
 
 
-
-
             </div>
             <div class="col-md-4">
 
 
-              <div class="service-item">
-                <div class="service-item-icon">
-                  <i class="devicon-ruby-plain-wordmark colored"></i>
-                </div>
+              <div class="service-item" data-aos="fade" data-aos-delay="1100">
                 <div class="service-item-title">
                   <h3>Ruby</h3>
                 </div>
+                <div class="service-item-icon">
+                  <i class="devicon-ruby-plain-wordmark colored"></i>
+                </div>
+                <p>Ruby is a dynamic, reflective, object-oriented, general-purpose programming language. It was designed and developed in the mid-1990s by Yukihiro "Matz" Matsumoto in Japan</p>
                 <div class="service-item-description">
-                  <p>In imperdiet non dolor sed vulputate. Pellentesque eget.</p>
+
 
                 </div>
 
@@ -207,15 +376,15 @@
             </div>
             <div class="col-md-4">
 
-              <div class="service-item">
-                <div class="service-item-icon">
-                  <i class="devicon-rails-plain-wordmark colored"></i>
-                </div>
+              <div class="service-item" data-aos="fade" data-aos-delay="1200">
                 <div class="service-item-title">
                   <h3>Rails</h3>
                 </div>
+                <div class="service-item-icon">
+                  <i class="devicon-rails-plain-wordmark colored"></i>
+                </div>
                 <div class="service-item-description">
-                  <p>Nullam ultrices arcu non nisi mollis, dignissim.</p>
+                  <p>Ruby on Rails, or Rails, is a server-side web application framework written in Ruby under the MIT License. Rails is a model–view–controller framework, providing default structures for a database, a web service, and web pages</p>
 
                 </div>
 
@@ -231,6 +400,8 @@
       </div>
 
   </section>
+
+
 
 
   <!-- About -->
@@ -258,19 +429,19 @@
               <div id="about-content-box-inner">
 
                 <div class="content-box">
-                  <div data-aos="fade-down">
+                  <div data-aos="fade-down" data-aos-delay="200">
                     <h3>About me</h3>
                     <div class="content-title-underline">
                     </div>
                   </div>
 
                   <div id="about-me-description">
-                    <div data-aos="fade-up">
+                    <div data-aos="fade-up" data-aos-delay="200">
 
                       <p>After working across different industries and being in the last year of my accounting degree. I found my passion in web/software development as well as cyber security and decided to pursue a career in the technology space.
                         <br> I love programming and how it's used in today's society. I love to explore large scale problems and believe my abilities is best achieved by working as a part of a team who share the same goals and visions.</p>
                       <div id="about-button">
-                        <div data-aos="fade-up">
+                        <div data-aos="fade-up" data-aos-delay="200">
 
                           <button type="button" class="btn btn-primary">My Projects</button>
                         </div>
@@ -297,8 +468,11 @@
   <section id="Projects">
 
     <div class="content-box">
-      <div data-aos="fade-down">
-        <h3>Projects</h3>
+      <div data-aos="fade-down" data-aos-delay="200">
+        <h3>Personal Projects</h3>
+        <div class="service-paragraph">
+          <p>While I'm studying, I'm also free-lancing on the side</p>
+        </div>
         <div class="content-title-underline">
         </div>
       </div>
@@ -306,8 +480,8 @@
 
       <div class="container-fluid">
 
-        <div data-aos="fade-up">
-          <div class="row">
+        <div data-aos="fade-up" data-aos-delay="200">
+          <div class="row no-pad">
 
             <div class="col-md-3">
               <div class="img-wrapper">
@@ -378,25 +552,127 @@
   </section>
 
 
+  <footer>
+
+    <div id="contact">
+
+      <div class="container">
+
+        <div class="row">
+
+          <div class="col-md-6">
+
+            <div id="contact-left">
+
+              <img src="img/logo-5.png" alt="Arthur"></img>
+              <br>
+              <br>
+
+              <p>Thank you for taking a look at my portfolio. If you have any questions, please use the contact form or email me directly.</p>
+
+              <div id="contact-info">
+
+                <address>
+
+              <strong>
+<h3>
+                Find Me <i class="fas fa-search"></i>
+</h3>
+
+              </strong>
+
+              <br>
+
+              <p>Level 2/7 Kelly St, Ultimo NSW 2007</p>
+
+            </address>
+
+                <div id="phone-email">
+
+                  <p>
+
+                    <strong>Phone: </strong><span>Contact me via email first if you would like a phone call and I'll get back to you</span> <br>
+                    <strong>Email: </strong><span>arthur.developer.work@gmail.com</span><br>
+
+
+                  </p>
+
+                </div>
+
+                <ul class="social-list">
+
+
+                  <a href="https://www.linkedin.com/in/arthur-truong-a4b8a64b/" target="_blank" class="social-icon icon-gray"><i class="fab fa-linkedin-in" aria-hidden="true"></i></a></li>
+
+                  <a href="https://twitter.com/ArthurTDev" target="_blank" class="social-icon icon-gray"><i class="fab fa-twitter" aria-hidden="true"></i></a></li>
+
+                  <a href="https://github.com/ArthurTruong5/" target="_blank" class="social-icon icon-gray"><i class="fab fa-github" aria-hidden="true"></i></a></li>
+
+
+
+
+
+                </ul>
+
+
+              </div>
+
+            </div>
+
+          </div>
+
+          <div class="col-md-6">
+
+            <div id="contact-right">
+
+              <h3>Contact Me</h3>
+              <form class="#" action="index.html" method="post">
+
+                <input type="text" name="full-name" placeholder="Full Name" class="form-control">
+
+                <input type="text" name="email-address" placeholder="Email Address" class="form-control">
+
+                <textarea name="Message" placeholder="Message" rows="5" cols="74"></textarea>
+
+                <div id="send-btn">
+
+                  <a class="btn btn-outline-light btn-lg btn-general btn-white" href="#" role="button">SEND</a>
+
+                </div>
+
+              </form>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </footer>
+
+
+  <!-- doesn't freaking work :( -->
+  <!-- <a href="#" id="back-to-top" class="btn btn-sm btn-blue back-to-top"><i class="far fa-arrow-alt-circle-up"></i></a> -->
 
   <!-- Temporary Space -->
-  <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+  <br><br><br><br><br><br><br>
 
 
 
 
-  <!-- JQUERY -->
-  <script src="js/jquery.js"></script>
-  <!--We need to add bootstrap AFTER jquery because bootstrap requires JQURY library-->
-
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.5.2/jquery.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.2/modernizr.js"></script>
 
   <!--Bootstrap javascript-->
-  <script src="js/bootstrap/bootstrap.min.js"></script>
-
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
   <!-- animation JS -->
-  <script src="js/animation.js"></script>
+  <script>
+    src = "js/animation.js" >
+  </script>
 
   <!-- AOS JS -->
   <script src="js/aos/aos.js"></script>
@@ -404,9 +680,76 @@
   <!-- Custom JS  -->
   <script src="js/custom.js"></script>
 
+  <!-- Loading  -->
   <script src="js/loading.js"></script>
 
+  <!-- Custom css magnific -->
+  <script src="js/mag-popup/mag-popup.js"></script>
 
+  <script src="js/smooth-scrolling/jquery.easing.1.3.js"></script>
+  <!-- Smooth Scrolling -->
+  <script src="js/dist/js/smooth-scroll.js"></script>
+
+  <script>
+    var scroll = new SmoothScroll('a[href*="#"]', {
+      // Selectors
+      ignore: '[data-scroll-ignore]', // Selector for links to ignore (must be a valid CSS selector)
+      header: null, // Selector for fixed headers (must be a valid CSS selector)
+
+      // Speed & Easing
+      speed: 2000, // Integer. How fast to complete the scroll in milliseconds
+      offset: 95, // Integer or Function returning an integer. How far to offset the scrolling anchor location in pixels
+      easing: 'easeInOutCubic', // Easing pattern to use
+      customEasing: function(time) {
+
+        // Function. Custom easing pattern
+        // If this is set to anything other than null, will override the easing option above
+
+        // return <your formulate with time as a multiplier>
+
+        // Example: easeInOut Quad
+        return time < 0.5 ? 2 * time * time : -1 + (4 - 2 * time) * time;
+
+      },
+
+      // Callback API
+      before: function(anchor, toggle) {}, // Callback to run before scroll
+      after: function(anchor, toggle) {} // Callback to run after scroll
+    });
+  </script>
+
+  <script>
+    function loop($swap) {
+      var next = $swap.find("li.visible").removeClass("visible").index() + 1;
+
+      if (next >= $swap.find("li").length) {
+        next = 0;
+      }
+
+      $swap.width($($swap.find("li").get(next)).addClass("visible").outerWidth());
+      $swap.css({
+        "transform": "translateY(-" + next * 3 + "rem)"
+      });
+
+      setTimeout(function() {
+        loop($swap);
+      }, 2000);
+    };
+
+    $(function() {
+      $("#swap").each(function() {
+        var $this = $(this);
+
+        $this.find("li").each(function() {
+          $(this).css({
+            top: $(this).index() * 3 + "rem"
+          });
+        });
+
+        loop($this);
+      });
+    });
+  </script>
 
 </body>
 

@@ -1,17 +1,16 @@
-// (function() {
-//
-//   var quotes = $(".quotes");
-//   var quoteIndex = -1;
-//
-//   function showNextQuote() {
-//       ++quoteIndex;
-//       quotes.eq(quoteIndex % quotes.length)
-//           $(".div1").fadeIn(1500)
-//           $(".div2").delay(1500)
-//           $(".div3").fadeOut(1500, showNextQuote);
-//
-//   }
-//
-//   showNextQuote();
-//
-// })();
+(function() {
+
+    var quotes = $(".quotes");
+    var quoteIndex = -1;
+
+    function showNextQuote() {
+        ++quoteIndex;
+        quotes.eq(quoteIndex % quotes.length)
+            .fadeIn(2000)
+            .delay(2000)
+            .fadeOut(2000, showNextQuote);
+    }
+
+    showNextQuote();
+
+})();

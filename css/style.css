@@ -1,3 +1,6 @@
+
+
+
 @import url(https://fonts.googleapis.com/css?family=Lato);
 /* ==========================================================================
 
@@ -13,6 +16,9 @@
 /* ========================================================================== */
 
 /* We can provide alternative options if the browser cannot identify the font. All we need to do is add " , " to ensure that there is another option */
+
+
+
 
 html, body {
   height: 100%;
@@ -32,6 +38,7 @@ h3 {
   text-transform: capitalize;
   color: #41464b;
   font-weight: 700;
+  text-align: center;
 }
 
 h2 {
@@ -103,27 +110,7 @@ a, a .action_box {
   border-radius: 50%;
 }
 
-.home-social span {
-  color: #FFA500;
-  right: 4.5rem;
-  font-size: 1.3rem;
-  opacity: 0;
-  visibility: hidden;
-  -webkit-transform: scale(0);
-  -ms-transform: scale(0);
-  transform: scale(0);
-  -webkit-transform-origin: 100% 50%;
-  -ms-transform-origin: 100% 50%;
-  transform-origin: 100% 50%;
-}
 
-.home-social li:hover span {
-  opacity: 1;
-  visibility: visible;
-  -webkit-transform: scale(1);
-  -ms-transform: scale(1);
-  transform: scale(1);
-}
 
 /* ==========================================================================
 
@@ -438,55 +425,47 @@ background-color: none;
   padding-left: 85px;
 }
 
+
+
 /* ==========================================================================
 
                         About Section
 
 /* ========================================================================== */
 
-#about-at-diagonal {
-  width: 26%;
-  height: 118px;
-  float: right;
-  background-image: url(../img/org.jpg);
-  border-left: 392px solid #fff;
-  border-top: 664px solid transparent;
-  background-color: #3b97f9;
-  background-size: auto;
-  background-position: right;
+
+.img-picture img {
+
+  width: 100%;
+
+
 }
 
-#about-content-box {
-  float: left;
-  height: 700px;
+#about-bg-diagonal img {
+    float: right;
+    background-color: gray;
+
+
+  }
+
+#about {
+
+  background-color: gray;
+
+
 }
 
-#about-content-box-outer {
-  width: 800px;
-  height: 600px;
-  display: table;
+#about p {
+
+  color: #fff;
+
 }
 
-#about-content-box-inner {
-  display: table-cell;
-  vertical-align: middle;
-}
+#about-content-box-inner h3 {
 
-#about .content-box h3 {
-  text-align: middle;
-  margin-bottom: 20px;
-}
+padding: 40px;
+color: #fff;
 
-#about .content-title-underline {
-  margin: 0px 0px 30px 380px;
-}
-
-#about-me-description {
-  margin-bottom: 30px;
-}
-
-.content-box h3 {
-  text-align: center;
 }
 
 /* ==========================================================================
@@ -494,6 +473,13 @@ background-color: none;
                         Projects
 
 /* ========================================================================== */
+
+.img-fluid {
+    max-width: 100%;
+    height: auto;
+    display: block;
+
+}
 
 /* Choose all ROW and no ID class BRACKETS calls ALL that contains COL */
 
@@ -505,6 +491,7 @@ background-color: none;
 .img-wrapper {
   /* This ensures that the image doesnt just POP out  */
   overflow: hidden;
+
 }
 
 .img-wrapper img {
@@ -531,7 +518,7 @@ background-color: none;
   width: 100%;
   font-family: "Lato", sans-serif;
   font-weight: bold;
-  font-size: 3rem;
+  font-size: 2rem;
   text-stroke: .5px;
   color: white;
 }
@@ -546,6 +533,7 @@ background-color: none;
 }
 
 #box1 #swap li {
+  list-style-type: none;
   position: absolute;
   top: 0;
   left: 0;
@@ -632,4 +620,49 @@ form .form-control {
   padding: 8px 16px;
   margin-bottom: 20px;
   color: #fff;
+}
+
+/* ==========================================================================
+
+                            Footer
+
+/* ========================================================================== */
+
+#footer-bottom {
+
+  background-color: rgba(0, 0, 0, 0.1);
+  padding: 30px 0px;
+  margin-top: 60px;
+}
+
+#footer-bottom p {
+
+  margin: 0px;
+  color: #fff;
+
+}
+
+#footer-menu {
+
+  float: left;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 300;
+
+
+}
+
+#footer-menu ul {
+
+  list-style: none;
+  padding-left: 0px;
+  margin: 0px;
+
+}
+
+#footer-menu ul li {
+
+  display: inline-block;
+  min-width: 32.5%;
+
 }

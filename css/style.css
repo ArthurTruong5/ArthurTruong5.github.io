@@ -200,21 +200,18 @@ background-color: none;
 
 #home-cover {
   /* .. means go one step back and find IMG folder */
-  height: 100%;
+
   background-image: url("../img/coding-home.jpg");
   /* So Background Image doesn't Loop */
-  background-repeat: no-repeat;
-  /* Will scale the background image as large as possible */
-  background-size: 100% auto;
-  /* The image will be centered within the whole screen  */
   background-position: center;
-  /* This is a parallax effect */
-  background-attachment: fixed;
-  -webkit-background-size: 100% auto;
-  -moz-background-size: 100% auto;
-  -o-background-size: 100% auto;
-  background-size: 100% auto;
-  max-width: 100%;
+   background-repeat: no-repeat;
+   background-attachment: fixed;
+   -webkit-background-size: 100% auto;
+   -moz-background-size: 100% auto;
+   -o-background-size: 100% auto;
+   background-size: 100% auto;
+   width: 100%;
+  /* max-width: 100%; */
 }
 
 #home-content-box {

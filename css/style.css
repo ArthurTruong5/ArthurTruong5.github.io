@@ -206,11 +206,12 @@ background-color: none;
   background-position: center;
    background-repeat: no-repeat;
    background-attachment: fixed;
-   -webkit-background-size: 100% auto;
+   /* -webkit-background-size: 100% auto;
    -moz-background-size: 100% auto;
    -o-background-size: 100% auto;
-   background-size: 100% auto;
-   width: 100%;
+   background-size: 100% auto; */
+   width: 100vw;
+   height: 100vh;
   /* max-width: 100%; */
 }
 

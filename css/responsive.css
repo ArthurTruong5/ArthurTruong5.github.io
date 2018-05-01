@@ -164,6 +164,12 @@ margin-top: 150px;
 
 }
 
+@media screen and (max-width: 768px) {
+	.parallax_img {
+		background-attachment: inherit;
+	}
+}
+
 /* // Medium devices (tablets, 768px and up) */
 
 @media (min-width: 768px) and (max-width: 991.98px) {
@@ -171,6 +177,7 @@ margin-top: 150px;
     font-size: 55px;
     padding: 25px;
   }
+
 
 
 

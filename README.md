@@ -49,3 +49,94 @@ I used https://fontawesome.com/ and http://konpa.github.io/devicon/ for my icons
 ![](https://i.imgur.com/zdeFttN.png)
 
 ![](https://i.imgur.com/G7MiT7s.png)
+
+###  CSS, JavaScript and Jquery
+
+I used magnific popup to give a zoom in effect for my projects
+- http://dimsemenov.com/plugins/magnific-popup/ 
+
+AOS animate was used to acheive the fade and delay effects
+- https://github.com/michalsnik/aos
+
+
+This JavaScript helped acheive the swap quote effect for the home
+'''
+
+function loop($swap) {
+      var next = $swap.find("li.visible").removeClass("visible").index() + 1;
+
+      if (next >= $swap.find("li").length) {
+        next = 0;
+      }
+
+      $swap.width($($swap.find("li").get(next)).addClass("visible").outerWidth());
+      $swap.css({
+        "transform": "translateY(-" + next * 3 + "rem)"
+      });
+
+      setTimeout(function() {
+        loop($swap);
+      }, 2000);
+    };
+
+    $(function() {
+      $("#swap").each(function() {
+        var $this = $(this);
+
+        $this.find("li").each(function() {
+          $(this).css({
+            top: $(this).index() * 3 + "rem"
+          });
+        });
+
+        loop($this);
+      });
+    });
+
+
+
+'''
+
+
+This javascript helped with smooth scrolling by identifying the anchor element
+
+'''
+
+
+var scroll = new SmoothScroll('a[href*="#"]', {
+      // Selectors
+      ignore: '[data-scroll-ignore]', // Selector for links to ignore (must be a valid CSS selector)
+      header: null, // Selector for fixed headers (must be a valid CSS selector)
+
+      // Speed & Easing
+      speed: 2000, // Integer. How fast to complete the scroll in milliseconds
+      offset: 95, // Integer or Function returning an integer. How far to offset the scrolling anchor location in pixels
+      easing: 'easeInOutCubic', // Easing pattern to use
+      customEasing: function(time) {
+
+        // Function. Custom easing pattern
+        // If this is set to anything other than null, will override the easing option above
+
+        // return <your formulate with time as a multiplier>
+
+        // Example: easeInOut Quad
+        return time < 0.5 ? 2 * time * time : -1 + (4 - 2 * time) * time;
+
+      },
+
+      // Callback API
+      before: function(anchor, toggle) {}, // Callback to run before scroll
+      after: function(anchor, toggle) {} // Callback to run after scroll
+    });
+
+
+
+'''
+
+
+
+
+I used Bootstrap scroll spy to recognise the sections of my website - https://getbootstrap.com/docs/4.0/components/scrollspy/
+Bootstrap 4 was used throughout the website. I used bootstrap grid system, buttons, navigation bar. https://getbootstrap.com/
+
+

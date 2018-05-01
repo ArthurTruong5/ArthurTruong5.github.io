@@ -10,13 +10,13 @@ Before starting out, I included all the items i wanted to be part of my portfoli
 
 The listed items I included 
 
-Home page
-Education history
-Employment history
-Skills as a developer
-About Me
-Future projects
-Contact forms
+- Home page
+- Education history
+- Employment history
+- Skills as a developer
+- About Me
+- Future projects
+- Contact forms
 
 
 ![random](https://i.imgur.com/tk2LPww.png)

@@ -62,10 +62,10 @@ AOS animate was used to acheive the fade and delay effects
 This JavaScript helped acheive the swap quote effect for the home
 
 '''
-
+'''
 function loop($swap) {
       var next = $swap.find("li.visible").removeClass("visible").index() + 1;
-
+'''
       if (next >= $swap.find("li").length) {
         next = 0;
       }

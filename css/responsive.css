@@ -23,13 +23,6 @@
 
   }
 
-  #home-cover {
-      background-image: url("../img/coding-home.jpg");
-      background-attachment: fixed;
-
-
-  }
-
 
   .home-social i {
       font-size: 14px;
@@ -77,12 +70,11 @@
   }
 
   #home-cover {
-      background-image: url("../img/coding-home.jpg");
-      background-attachment: fixed;
+
+  transform: scale(0.5);
 
 
   }
-
 
   #about-at-diagonal {
     border-left: 0;

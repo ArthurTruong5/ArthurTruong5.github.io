@@ -206,18 +206,15 @@ background-color: none;
   height: 100%;
 }
 
-#home-cover {
+.bg-parallax {
   /* .. means go one step back and find IMG folder */
-  height: 100%;
-  background-image: url("../img/coding-home.jpg");
-  /* So Background Image doesn't Loop */
-  background-repeat: no-repeat;
-  /* Will scale the background image as large as possible */
-  background-size: cover;
-  /* The image will be centered within the whole screen  */
-  background-position: center;
-  /* This is a parallax effect */
+
+  height: 800px;
+  background-image: url('../img/coding-home.jpg');
   background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100% auto;
 }
 
 #home-content-box {
@@ -261,15 +258,6 @@ background-color: none;
 
 /* ========================================================================== */
 
-.bg-parallax {
-  background-repeat: no-repeat;
-  /* Will scale the background image as large as possible */
-  background-size: cover;
-  /* The image will be centered within the whole screen  */
-  background-position: center;
-  /* This is a parallax effect */
-  background-attachment: fixed;
-}
 
 /* ==========================================================================
 

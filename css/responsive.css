@@ -70,19 +70,7 @@
   }
 
 
-  #home-cover {
-    /* .. means go one step back and find IMG folder */
-    height: 100%;
-    background-image: url("../img/fixed-image.jpeg");
-    /* So Background Image doesn't Loop */
-    background-repeat: no-repeat;
-    /* Will scale the background image as large as possible */
-    background-size: cover;
-    /* The image will be centered within the whole screen  */
-    background-position: center;
-    /* This is a parallax effect */
-    background-attachment: fixed;
-  }
+
 
 
 
@@ -165,7 +153,7 @@ margin-top: 150px;
 }
 
 @media screen and (max-width: 768px) {
-	.parallax_img {
+	.bg-parallax {
 		background-attachment: inherit;
 	}
 }

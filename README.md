@@ -60,11 +60,11 @@ AOS animate was used to acheive the fade and delay effects
 
 
 This JavaScript helped acheive the swap quote effect for the home
+
 '''
-'''
+
 function loop($swap) {
       var next = $swap.find("li.visible").removeClass("visible").index() + 1;
- '''
 
       if (next >= $swap.find("li").length) {
         next = 0;
@@ -93,22 +93,21 @@ function loop($swap) {
         loop($this);
       });
     });
-
-
-
 '''
+
+
+
 
 
 This javascript helped with smooth scrolling by identifying the anchor element
 
-'''
 '''
 
 var scroll = new SmoothScroll('a[href*="#"]', {
       // Selectors
       ignore: '[data-scroll-ignore]', // Selector for links to ignore (must be a valid CSS selector)
       header: null, // Selector for fixed headers (must be a valid CSS selector)
-'''
+
       // Speed & Easing
       speed: 2000, // Integer. How fast to complete the scroll in milliseconds
       offset: 95, // Integer or Function returning an integer. How far to offset the scrolling anchor location in pixels
@@ -130,9 +129,9 @@ var scroll = new SmoothScroll('a[href*="#"]', {
       after: function(anchor, toggle) {} // Callback to run after scroll
     });
 
-
-
 '''
+
+
 
 
 

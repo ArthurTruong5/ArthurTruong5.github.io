@@ -62,17 +62,16 @@
 }
 
 /* // Small devices (landscape phones, 576px and up) */
-
+@media (max-width: 550px) {
+  #home-cover {
+    background-attachment: scroll;
+  }
+}
 @media (min-width: 576px) and (max-width: 767.98px) {
   .fa, .fas {
     font-weight: 900;
     padding: 30px 0 0 0px;
   }
-
-
-
-
-
 
   #about-at-diagonal {
     border-left: 0;
@@ -152,15 +151,6 @@ margin-top: 150px;
 
 }
 
-@media screen and (max-width: 768px) {
-	.bg-parallax {
-		background-attachment: scroll;
-    background-size: cover;
-    height: 100vh;
-    padding: 0 0;
-	}
-}
-
 /* // Medium devices (tablets, 768px and up) */
 
 @media (min-width: 768px) and (max-width: 991.98px) {
@@ -168,7 +158,6 @@ margin-top: 150px;
     font-size: 55px;
     padding: 25px;
   }
-
 
 
 

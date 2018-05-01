@@ -1,3 +1,6 @@
+
+
+
 @import url(https://fonts.googleapis.com/css?family=Lato);
 /* ==========================================================================
 
@@ -13,6 +16,9 @@
 /* ========================================================================== */
 
 /* We can provide alternative options if the browser cannot identify the font. All we need to do is add " , " to ensure that there is another option */
+
+
+
 
 html, body {
   height: 100%;
@@ -103,6 +109,8 @@ a, a .action_box {
   border: 2px solid #FFFFFF;
   border-radius: 50%;
 }
+
+
 
 /* ==========================================================================
 
@@ -200,19 +208,16 @@ background-color: none;
 
 #home-cover {
   /* .. means go one step back and find IMG folder */
-
+  height: 100%;
   background-image: url("../img/coding-home.jpg");
   /* So Background Image doesn't Loop */
+  background-repeat: no-repeat;
+  /* Will scale the background image as large as possible */
+  background-size: cover;
+  /* The image will be centered within the whole screen  */
   background-position: center;
-   background-repeat: no-repeat;
-   background-attachment: fixed;
-   /* -webkit-background-size: 100% auto;
-   -moz-background-size: 100% auto;
-   -o-background-size: 100% auto;
-   background-size: 100% auto; */
-   width: 100vw;
-   height: 100vh;
-  /* max-width: 100%; */
+  /* This is a parallax effect */
+  background-attachment: fixed;
 }
 
 #home-content-box {
@@ -420,32 +425,47 @@ background-color: none;
   padding-left: 85px;
 }
 
+
+
 /* ==========================================================================
 
                         About Section
 
 /* ========================================================================== */
 
+
 .img-picture img {
+
   width: 100%;
+
+
 }
 
 #about-bg-diagonal img {
-  float: right;
-  background-color: gray;
-}
+    float: right;
+    background-color: gray;
+
+
+  }
 
 #about {
+
   background-color: gray;
+
+
 }
 
 #about p {
+
   color: #fff;
+
 }
 
 #about-content-box-inner h3 {
-  padding: 40px;
-  color: #fff;
+
+padding: 40px;
+color: #fff;
+
 }
 
 /* ==========================================================================
@@ -455,9 +475,10 @@ background-color: none;
 /* ========================================================================== */
 
 .img-fluid {
-  max-width: 100%;
-  height: auto;
-  display: block;
+    max-width: 100%;
+    height: auto;
+    display: block;
+
 }
 
 /* Choose all ROW and no ID class BRACKETS calls ALL that contains COL */
@@ -470,6 +491,7 @@ background-color: none;
 .img-wrapper {
   /* This ensures that the image doesnt just POP out  */
   overflow: hidden;
+
 }
 
 .img-wrapper img {
@@ -607,30 +629,40 @@ form .form-control {
 /* ========================================================================== */
 
 #footer-bottom {
+
   background-color: rgba(0, 0, 0, 0.1);
   padding: 30px 0px;
   margin-top: 60px;
 }
 
 #footer-bottom p {
+
   margin: 0px;
   color: #fff;
+
 }
 
 #footer-menu {
+
   float: left;
   color: #fff;
   font-size: 16px;
   font-weight: 300;
+
+
 }
 
 #footer-menu ul {
+
   list-style: none;
   padding-left: 0px;
   margin: 0px;
+
 }
 
 #footer-menu ul li {
+
   display: inline-block;
   min-width: 32.5%;
+
 }

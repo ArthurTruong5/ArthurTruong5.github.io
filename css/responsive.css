@@ -69,12 +69,22 @@
     padding: 30px 0 0 0px;
   }
 
+
   #home-cover {
-
-  transform: scale(0.5);
-
-
+    /* .. means go one step back and find IMG folder */
+    height: 100%;
+    background-image: url("../img/fixed-image.jpeg");
+    /* So Background Image doesn't Loop */
+    background-repeat: no-repeat;
+    /* Will scale the background image as large as possible */
+    background-size: cover;
+    /* The image will be centered within the whole screen  */
+    background-position: center;
+    /* This is a parallax effect */
+    background-attachment: fixed;
   }
+
+
 
   #about-at-diagonal {
     border-left: 0;

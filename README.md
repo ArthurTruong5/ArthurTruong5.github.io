@@ -1,5 +1,5 @@
 Arthur Truong 
-[Portfolio Website](ArthurTruong5.github.io)
+# ArthurTruong5.github.io
 
 
 ### Design Process 

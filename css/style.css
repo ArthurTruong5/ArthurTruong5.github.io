@@ -39,6 +39,7 @@ h3 {
   color: #41464b;
   font-weight: 700;
   text-align: center;
+
 }
 
 h2 {
@@ -332,6 +333,10 @@ background-color: none;
   font-weight: 700;
   text-align: center;
   margin: 0 0 30px 0;
+}
+
+#about-content-box-inner .content-title h3 {
+  margin: 0 0 -25px 0;
 }
 
 .content-title-underline {

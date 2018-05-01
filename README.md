@@ -123,9 +123,10 @@ This javascript helped with smooth scrolling by identifying the anchor element
 
 
 
+##Bootstrap 4
 
+https://getbootstrap.com/docs/4.0/components/scrollspy/
 
-I used Bootstrap scroll spy to recognise the sections of my website - https://getbootstrap.com/docs/4.0/components/scrollspy/
 Bootstrap 4 was used throughout the website. I used bootstrap grid system, buttons, navigation bar. https://getbootstrap.com/
 
 

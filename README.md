@@ -18,7 +18,8 @@ About Me
 Future projects
 Contact forms
 
-![random](https://imgur.com/a/kYAiP1G)
+
+![random](https://i.imgur.com/tk2LPww.png)
 ![](https://imgur.com/a/zg5T78H)
 
 ## Layout Design

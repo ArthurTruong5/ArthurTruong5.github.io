@@ -209,12 +209,12 @@ background-color: none;
 .bg-parallax {
   /* .. means go one step back and find IMG folder */
 
-  height: 800px;
+  height: 100%;
   background-image: url('../img/coding-home.jpg');
-  background-attachment: fixed;
+  /* background-attachment: fixed; */
   background-position: center;
   background-repeat: no-repeat;
-  background-size: 100% auto;
+  background-size: cover;
 }
 
 #home-content-box {

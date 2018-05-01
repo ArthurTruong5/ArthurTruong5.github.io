@@ -152,9 +152,9 @@ margin-top: 150px;
 
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (min-width: 350px) {
 	.bg-parallax {
-		background-attachment: cover;
+		background-attachment: scroll;
     background-size: cover;
     height: 100vh;
     padding: 0 0;

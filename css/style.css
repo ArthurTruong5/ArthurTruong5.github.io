@@ -213,7 +213,7 @@ background-color: none;
   /* So Background Image doesn't Loop */
   background-repeat: no-repeat;
   /* Will scale the background image as large as possible */
-  background-size: cover;
+  background-size: contain;
   /* The image will be centered within the whole screen  */
   background-position: center;
   /* This is a parallax effect */

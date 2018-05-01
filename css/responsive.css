@@ -23,6 +23,13 @@
 
   }
 
+  #home-cover {
+      background-image: url("../img/coding-home.jpg");
+      background-attachment: fixed;
+
+
+  }
+
 
   .home-social i {
       font-size: 14px;
@@ -68,6 +75,14 @@
     font-weight: 900;
     padding: 30px 0 0 0px;
   }
+
+  #home-cover {
+      background-image: url("../img/coding-home.jpg");
+      background-attachment: fixed;
+
+
+  }
+
 
   #about-at-diagonal {
     border-left: 0;

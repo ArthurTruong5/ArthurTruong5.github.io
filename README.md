@@ -129,4 +129,14 @@ https://getbootstrap.com/docs/4.0/components/scrollspy/
 
 Bootstrap 4 was used throughout the website. I used bootstrap grid system, buttons, navigation bar. https://getbootstrap.com/
 
+### Slack Overflow Debugging
 
+I used the code below for debugging purposes
+
+'''
+
+* {
+  background: #000 !important;
+  color: #0f0 !important;
+  outline: solid #f00 1px !important;
+}

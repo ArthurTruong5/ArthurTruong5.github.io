@@ -133,7 +133,7 @@ Bootstrap 4 was used throughout the website. I used bootstrap grid system, butto
 
 I used the code below for debugging purposes
 
-,,,
+```
 
 * {
   background: #000 !important;
@@ -141,4 +141,4 @@ I used the code below for debugging purposes
   outline: solid #f00 1px !important;
 }
 
-,,,
+```

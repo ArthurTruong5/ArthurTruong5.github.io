@@ -142,7 +142,7 @@ Bootstrap 4 was used throughout the website. I used bootstrap grid system, butto
 
 I used the code below for debugging purposes
 
-```
+```css
 
 * {
   background: #000 !important;
